@@ -5,7 +5,7 @@ pencolor('black')
 fillcolor('yellow')
 
 for i in range (6):
-    fd(100)
+    fd(150)
     for i in range (6):
         fd(50)
         begin_fill()
