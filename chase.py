@@ -4,16 +4,18 @@ import random
 WIDTH = 600
 HEIGHT = 600
 
+music.play('m1')
 background = Actor("b1")
-player = Actor("p1")
+player = Actor("play")
 player.x = 200
 player.y = 200
 
-enemy = Actor("enmy")
-player2 = Actor("p1")
-coin = Actor("coin1", pos=(300,300))
+
+enemy = Actor("corona")
+player2 = Actor("play")
+coin = Actor("paisa", pos=(300,300))
 score = 0
-time = 60
+t = 60
 
 
 def draw():
@@ -23,16 +25,19 @@ def draw():
     enemy.draw()
     player2.draw()
     coin.draw()
-    screen.draw.text("My game", (200,0), color='red')
+    
+    screen.draw.text("COVID-19 GAME", (200,0), color='red')
     score_string = str(score)
     screen.draw.text(score_string, (0,0), color='green')
-    time_string = str(round(time))
+    time_string = str(round(t))
     screen.draw.text(time_string, (50,0), color='green')
 
+
+
 def update(delta):
-    global score, time
-    time = time - delta
-    if time <= 0:
+    global score, t
+    t = t - delta
+    if t <= 0:
         exit()
     if keyboard.right:
         player.x = player.x + 4
@@ -79,5 +84,5 @@ def update(delta):
         coin.y = random.randint(0, HEIGHT)
         score = score + 1
         print("Score:", score)
-
+        
 pgzrun.go()
