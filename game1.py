@@ -4,9 +4,9 @@ import pgzrun
 music.play('man')
 
 b = Rect((150,150) , (100,50))
-b=   Actor('ss' , (300,300))
+b=   Actor('ss', (300,300))
 
-vx ,vy =  3 , 3  #vx= velocity on x axis           #global variable
+vx , vy =  3 , 3  #vx= velocity on x axis           #global variable
                  #vy=velocity on y axis
 
 def draw():
@@ -16,7 +16,7 @@ def draw():
 def update():
     global vx , vy
     b.x +=vx
-    b.y +=vy
+    b.y +=vy                   
     
     if b.right > 800 or b.left < 0:
         vx = -vx

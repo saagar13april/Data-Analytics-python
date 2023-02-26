@@ -2,7 +2,7 @@ from turtle import *
 
 pencolor ('red')
 pensize(3)
-fillcolor('green')
+fillcolor('skyblue')
 speed('fast')
 
 for i in range (10,0,-1):
