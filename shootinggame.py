@@ -110,7 +110,7 @@ def on_key_down(key):
 
 
 def move_bullets():
-    
+     
     for bullet in bullets:
         bullet.y = bullet.y - 6 
         if bullet.y < 0:
