@@ -6,7 +6,7 @@ WIDTH = 600
 HEIGHT = 800
 MAX_BULLETS = 3
 level = 1
-lives = 5
+lives = 10
 score = 0
 
 music.play('m2')
@@ -41,7 +41,7 @@ def update(delta):
 def move_player():
     pass
 
-def move_enemies():
+def move_enemies(): 
     pass
 
 def move_bullets():
