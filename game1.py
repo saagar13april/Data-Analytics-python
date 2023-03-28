@@ -3,7 +3,7 @@ import pgzrun
 # add bgm music
 music.play('man')
 
-b = Rect((150,150) , (100,50))
+b = Rect ((150,150) , (100,50))
 b=   Actor('ss', (300,300))
 
 vx , vy =  3 , 3  #vx= velocity on x axis           #global variable
